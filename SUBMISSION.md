@@ -9,7 +9,7 @@ Items in [square brackets] are for you to fill in or confirm. Everything else is
 
 ## 1. Project Summary (50–200 words; this one is 173)
 
-AstroCura is an offline-first health co-pilot for astronauts on missions where Mission Control is minutes away. It learns each crew member's own baseline from sleep, mood, reaction time, heart rate, HRV, blood pressure, body mass, exercise, temperature, SpO₂, cabin CO₂ and radiation dose, then flags sustained drift with robust statistics (a leaky CUSUM) instead of population ranges. Indicators are organised by NASA's five human-spaceflight hazards, and cross-hazard rules turn drift into plain-language findings such as illness, sleep restriction or cardiovascular deconditioning, with the evidence shown. Because communication delay on a Mars mission grows to many minutes each way, triage adapts: act now, call ground, or send a compact downlink packet and keep working the onboard protocol. The demo runs entirely in the browser on a clearly labelled synthetic Mars-transit mission and includes real NASA OSDR Inspiration4 blood-count data. A stress-test lab lets anyone inject a problem into a simulated crew member and see how many days AstroCura needed to notice, and how often it misses. It is decision support, not a diagnostic device.
+AstroCura is an offline-first health co-pilot for astronauts on missions where Mission Control is minutes away. It learns each crew member's own baseline from sleep, mood, stress, reaction time, heart rate, HRV, blood pressure, body mass, exercise, temperature, SpO₂, cabin CO₂ and radiation dose, then flags sustained drift with robust statistics (a leaky CUSUM) instead of population ranges. Indicators are organised by NASA's five human-spaceflight hazards, and cross-hazard rules turn drift into plain-language findings such as illness, sleep restriction or cardiovascular deconditioning, with the evidence shown. Because communication delay on a Mars mission grows to many minutes each way, triage adapts: act now, call ground, or send a compact downlink packet and keep working the onboard protocol. The demo runs entirely in the browser on a clearly labelled synthetic Mars-transit mission and includes real NASA OSDR Inspiration4 blood-count data. A stress-test lab lets anyone inject a problem into a simulated crew member and see how many days AstroCura needed to notice, and how often it misses. It is decision support, not a diagnostic device.
 
 ---
 
@@ -91,7 +91,7 @@ Vanilla HTML/CSS/JavaScript, dependency-free; hand-built SVG charts; determinist
 
 Suggested wording (edit so it matches what your team actually did):
 
-> We used Claude (Anthropic) as a coding and writing assistant. Claude wrote the application code (the statistical engine, simulator, user interface and tests) and drafted the written submission under our direction. All NASA data was retrieved from NASA's public OSDR API; the data in the NASA OSDR tab is unmodified except for the documented exclusions (one internally inconsistent row and one blank cell). The Mars-transit crew data is synthetic and labelled as such everywhere in the app. The demo video was recorded from the app and edited with AI assistance, and its music and sound effects were synthesized by code written by Claude (no third-party music or samples); this is stated on the video's end card and in its file metadata. [Our team defined the project, chose the challenge, reviewed the results and verified the cited sources: confirm or edit.]
+> We used Claude (Anthropic) as a coding and writing assistant. Claude wrote the application code (the statistical engine, simulator, user interface and tests) and drafted the written submission under our direction. All NASA data was retrieved from NASA's public OSDR API; the data in the NASA OSDR tab is unmodified except for the documented exclusions (one internally inconsistent row and one blank cell). The Mars-transit crew data is synthetic and labelled as such everywhere in the app. The demo video was recorded from the app and edited with AI assistance, and its music and sound effects were synthesized by code written by Claude (no third-party music or samples); this is stated on the video's end card, in a small corner mark on the video and in its file metadata. [Our team defined the project, chose the challenge, reviewed the results and verified the cited sources: confirm or edit.]
 
 ## 6. Pitch
 
@@ -114,10 +114,13 @@ Suggested wording (edit so it matches what your team actually did):
 
 **Slide outline (7):** 1 Problem and the five hazards. 2 Solution in one screenshot (Overview). 3 Personal baseline vs population range (OSDR figure). 4 Cross-hazard insights with evidence (Trends + insight cards). 5 Delay-aware triage and downlink packet. 6 Stress test, validation and honesty (stress-test screenshot, false-alarm and delay table; real vs simulated). 7 Limitations, next steps, team and links.
 
-## 8. Before you press Submit
+## 8. Final links and Before you press Submit
 
-- [ ] **Public demo link.** Host `index.html` somewhere public: Netlify Drop (drag the file onto app.netlify.com/drop), or GitHub Pages (new public repo → upload `index.html` as the file named `index.html` → Settings → Pages). Open the link in a private window to confirm it is public.
-- [ ] **Public project link** (the repo, or the same page). Source is in `astrocura-source.zip`.
-- [ ] **Demo video** (`AstroCura_demo.mp4`, 29.5 s, 1080p 60 fps, with music and sound effects and a small corner mark "AI-assisted video & music (Claude)", as NASA's project submission guide requires a visible watermark on AI-assisted video) must also be public: upload to YouTube as Unlisted and put this in the description: "Demo of AstroCura for the NASA Space Apps Challenge 2026. Video and music produced with AI assistance (Claude, Anthropic). Demo data is simulated."
-- [ ] Fill in the team members and the [bracketed] parts of the AI declaration so they are true.
+Paste-ready form values:
+- **Project Demonstration:** `https://github.com/ughurpirali/astrocura/blob/main/demo/AstroCura_demo.mp4` (29.5 s video; or the YouTube Unlisted link if you use that instead)
+- **Project:** `https://ughurpirali.github.io/astrocura/` (live site; source code at `https://github.com/ughurpirali/astrocura`)
+
+- [ ] Open both links in a **private window** and confirm they need no login, password or permission. The video must play and the site must load.
+- [ ] The demo video (`demo/AstroCura_demo.mp4`, 29.5 s, 1080p 60 fps, music and sound effects, small corner mark "AI-assisted video & music (Claude)") follows NASA's project submission guide, which asks for a visible watermark on AI-assisted video. If you also upload it to YouTube, use the description: "Demo of AstroCura for the NASA Space Apps Challenge 2026. Video and music produced with AI assistance (Claude, Anthropic). Demo data is simulated."
+- [ ] Fill in the team members and the [bracketed] part of the AI declaration so it is true.
 - [ ] Accept the terms yourselves and press Submit for Judging yourselves; Claude will not do this for you.
