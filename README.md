@@ -6,6 +6,8 @@ AstroCura learns each crew member's own normal, watches 13 health indicators gro
 
 **Live demo:** open `index.html` (a single self-contained file, no server, no network). If this repository has GitHub Pages enabled, the demo is served from the repository root.
 
+**Demo video (29.5 s):** [`demo/AstroCura_demo.mp4`](demo/AstroCura_demo.mp4). Video and music made with AI assistance (Claude, Anthropic). Demo data is simulated.
+
 ## What is in the app
 
 Nine views: Overview, Trends, Crew of four, Actions and downlink (with a printable flight-surgeon report), Check-in and data, Stress test, NASA OSDR data, Method and Validation. It runs fully offline in a browser.
