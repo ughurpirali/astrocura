@@ -1,0 +1,7 @@
+{
+  "name": "astrocura",
+  "private": true,
+  "description": "AstroCura: offline-first health co-pilot for astronauts (NASA Space Apps 2026)",
+  "scripts": { "build": "node build.js", "test": "node test/engine.test.js" },
+  "devDependencies": { "esbuild": "^0.28.2" }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AstroCura: health co-pilot for astronauts</title>
+<meta name="description" content="AstroCura is offline-first health monitoring software for astronauts. It learns each crew member's own baseline, explains what is drifting across NASA's five hazards, and adapts its advice to the communication delay. Built for the 2026 NASA Space Apps Challenge.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='18' fill='%2312161F'/%3E%3Cpath d='M7 21h7l3-8 4 14 3-10 2 4h7' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="generator" content="Code and text produced with AI assistance (Claude, Anthropic) under the direction of the AstroCura team">
+<style>/*CSS*/</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#overview" data-tab="overview" aria-label="AstroCura, go to the overview"><span class="wm" aria-hidden="true">ASTROCURA</span></a>
+    <p class="tag">Health co-pilot for deep-space crews</p>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" id="tab-overview" data-tab="overview">Overview</button>
+      <button role="tab" id="tab-trends" data-tab="trends">Trends</button>
+      <button role="tab" id="tab-crew" data-tab="crew">Crew of four</button>
+      <button role="tab" id="tab-actions" data-tab="actions">Actions and downlink</button>
+      <button role="tab" id="tab-checkin" data-tab="checkin">Check-in and data</button>
+      <button role="tab" id="tab-lab" data-tab="lab">Stress test</button>
+      <button role="tab" id="tab-osdr" data-tab="osdr">NASA OSDR data</button>
+      <button role="tab" id="tab-methods" data-tab="methods">Method</button>
+      <button role="tab" id="tab-validation" data-tab="validation">Validation</button>
+    </nav>
+  </div>
+</header>
+<section class="timebar" aria-label="Mission day">
+  <div class="wrap tb">
+    <button class="btn sm" id="play" aria-pressed="false">Play</button>
+    <button class="btn sm" id="speed" aria-label="Playback speed 1×. Press to change.">1×</button>
+    <div class="dayread" id="daylabel" aria-live="off"></div>
+    <div class="scrubber">
+      <div id="ribbon"></div>
+      <label class="sr" for="day">Mission day</label>
+      <input type="range" id="day" min="0" max="179" value="132" step="1">
+      <div class="phclip" aria-hidden="true"><div class="ph" id="ph"><i></i></div></div>
+    </div>
+    <div class="tbright" id="pills"></div>
+  </div>
+</section>
+<main class="wrap"><div id="view" role="tabpanel" tabindex="-1"></div></main>
+<footer>
+  <div class="wrap">
+    <p>AstroCura is a 2026 NASA Space Apps Challenge prototype for "Create Health Monitoring Software for Astronauts on Space Missions". It is decision support, not a medical device, and NASA does not endorse it. Daily crew data in the demo is simulated. The blood counts on the NASA OSDR tab are real public data (OSD-569). Hazard and risk taxonomy: NASA Human Research Program. Super Intelligence disclosure: the code and written content were produced with AI assistance (Claude, Anthropic) under the team’s direction.</p>
+  </div>
+</footer>
+<dialog id="rptdlg" aria-labelledby="rpttitle">
+  <div class="rptbar"><div class="row"><button class="btn primary" id="rptprint" type="button">Print or save as PDF</button><button class="btn" id="rptclose" type="button">Close</button></div><p class="sub" id="rptmsg" role="status"></p></div>
+  <div class="rpt" id="rptbody"></div>
+</dialog>
+<script>/*ENGINE*/</script>
+<script>/*OSDR*/</script>
+<script>/*VALIDATION*/</script>
+<script>/*APP*/</script>
+</body>
+</html>
